@@ -109,7 +109,7 @@ menu-3-1-exec = menu-open-0
 [module/crypto]
 type = custom/script
 interval = 60
-exec = /home/christopher/.config/polybar/crypto.py
+exec = /home/christopher/.config/polybar/scripts/crypto.py
 format-underline = #2ac3de
 
 [module/updates-ubuntu]
