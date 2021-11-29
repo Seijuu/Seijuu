@@ -1,7 +1,4 @@
-- 👋 Hi, I’m Christopher Seijuú (alias)
-- 👀 I’m interested in Linux
-- 🌱 I’m currently learning ...
-- 📫 How to reach me ...
+- 👋 Hi, I’m Christopher Seijuú (alias) and Welcome!
 
 ![1](screenshots/desktop_beginning.png)
 
