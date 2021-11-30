@@ -1,4 +1,4 @@
-- 👋 Hi, I’m Christopher Seijuú (*alias*) and Welcome!
+- 👋 Hi, I’m @seijuuboy (*alias*) and Welcome!
 
 ![1](screenshots/desktop_b.png)
 
