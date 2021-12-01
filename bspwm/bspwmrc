@@ -23,12 +23,13 @@ bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
-# WALLPAPER
-${HOME}/.fehbg
-
 # EXTRAS
 /usr/bin/numlockx on
 xsetroot -cursor_name left_ptr
+xrandr --output Virtual1 --mode 1360x768
+
+# WALLPAPER
+${HOME}/.fehbg
 
 # RUN POLYBAR
 ${HOME}/.config/polybar/launch.sh &
