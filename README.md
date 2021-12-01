@@ -1,8 +1,8 @@
 - 👋 Hi, I’m @seijuuboy (*alias*) and Welcome!
 
-![1](screenshots/desktop_b.png)
+![1](screenshots/vannila.png)
 
-![2](screenshots/desktop_n.png)
+![2](screenshots/neofetch.png)
 
 <!---
 seijuuboy/seijuuboy is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
