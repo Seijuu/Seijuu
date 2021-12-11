@@ -1,16 +1,3 @@
-;==========================================================
-;
-;
-;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
-;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
-;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
-;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
-;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
-;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
-;
-;
-;==========================================================
-
 [colors]
 ;background = ${xrdb:color0:#222}
 background = #222
@@ -43,6 +30,8 @@ border-color = #00000000
 padding-left = 0
 padding-right = 2
 
+enable-ipc = true
+
 module-margin-left = 1
 module-margin-right = 2
 
@@ -52,7 +41,7 @@ font-2 = Font Awesome 5 Brands,Font Awesome 5 Brands Regular:style=Regular:pixel
 
 modules-left = bspwm xwindow
 modules-center = 
-modules-right = memory-info cpu date updates-arch
+modules-right = memory-info cpu date pacman-packages
 
 tray-position = right
 tray-padding = 2
@@ -81,23 +70,21 @@ label = %title:0:30:...%
 [module/crypto]
 type = custom/script
 interval = 60
-exec = bash /home/christopher/.config/polybar/scripts/crypto.py
+exec = zsh /home/christopher/.config/polybar/scripts/crypto.py
 format-underline = #2ac3de
 
-[module/updates-arch]
-type = custom/script
-exec = bash ~/.config/polybar/scripts/updates-arch.sh
-format = <label>
+[module/pacman-packages]
+type = custom/ipc
+hook-0 = yay -Qu | wc -l
 format-prefix = "📦 "
-label = %output%
-interval = 600
+initial = 1
 format-underline = #9ece6a
 
 [module/memory-info]
 type = custom/script
 
-exec = bash ~/.config/polybar/scripts/memory.sh
-click-left = bash ~/.config/polybar/scripts/memory.sh --popup
+exec = zsh ~/.config/polybar/scripts/memory.sh
+click-left = zsh ~/.config/polybar/scripts/memory.sh --popup
 format-prefix = "🧠 "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #ff9e64
