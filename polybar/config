@@ -48,6 +48,20 @@ cursor-scroll = ns-resize
 
 menu-3-1-exec = menu-open-0
 
+[module/updates-pacman-aurhelper]
+type       = custom/script
+format     = <label>
+label      = %{T5}%output%
+label-background = ${colors.background}
+label-overline = ${colors.foreground}
+label-underline = ${colors.foreground}
+
+#tail      = true
+exec       = ~/.config/polybar/scripts/updates-pacman-aurhelper.sh
+click-left = exec ~/.config/rofi/yaycheck.sh
+interval   = 3600
+#click-left= exec ~/.config/polybar/scripts/updates-pacman-aurhelper.sh
+
 [module/cpu-temperature]
 type = custom/script
 exec = zsh ~/.config/polybar/scripts/polytempamd
