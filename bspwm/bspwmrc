@@ -33,6 +33,3 @@ ${HOME}/.config/polybar/launch.sh
 
 # TRANSPARENCY
 picom &
-
-# SINCRONIZAR O SISTEMA
-pacman -Sy &
