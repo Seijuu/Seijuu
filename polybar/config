@@ -37,7 +37,7 @@ font-2 = NotoColorEmoji:fontformat=truetype:scale=10
 font-3 = Font Awesome 5 Brands,Font Awesome 5 Brands Regular:style=Regular:pixelsize=10;1
 
 modules-left = bspwm xwindow
-modules-center = cpu-temperature
+modules-center = 
 modules-right = updates-arch memory-info cpu date
 
 tray-position = right
@@ -61,7 +61,7 @@ exec = zsh ~/.config/polybar/scripts/updates-arch.sh
 format = <label>
 format-prefix = "📦 "
 label = %output%
-interval = 600
+interval = 60
 format-underline = #9ece6a
 
 [module/xwindow]
